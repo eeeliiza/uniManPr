@@ -1,0 +1,22 @@
+﻿<Window x:Class="uniManPr.GradesView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:uniManPr"
+        mc:Ignorable="d"
+        Title="Успеваемость" Height="400" Width="600">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF69B4" Offset="0.0"/>
+            <GradientStop Color="#F0E68C" Offset="1.0"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Успеваемость студентов" FontSize="20" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+
+            <DataGrid x:Name="GradesDataGrid" AutoGenerateColumns="True" Height="300"/>
+        </StackPanel>
+    </Grid>
+</Window>
