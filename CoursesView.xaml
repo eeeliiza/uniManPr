@@ -17,12 +17,16 @@
             <TextBlock Text="Управление курсами" FontSize="20" Margin="0,0,0,20" HorizontalAlignment="Center"/>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                <Button Content="Добавить" Width="100" Margin="5" Background="#FFFDB8B4"/>
-                <Button Content="Редактировать" Width="100" Margin="5" Background="#FFFDB8B4"/>
-                <Button Content="Удалить" Width="100" Margin="5" Background="#FFFDB8B4"/>
+                <Button Content="Добавить" Width="100" Margin="5" Background="#FFFDB8B4" Click="AddButton_Click"/>
+                <Button Content="Редактировать" Width="100" Margin="5" Background="#FFFDB8B4" Click="EditButton_Click"/>
+                <Button Content="Удалить" Width="100" Margin="5" Background="#FFFDB8B4" Click="DeleteButton_Click"/>
             </StackPanel>
 
-            <DataGrid x:Name="CoursesDataGrid" AutoGenerateColumns="True" Height="250"/>
+            <DataGrid x:Name="CoursesDataGrid" AutoGenerateColumns="True" Height="250">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Курс" Binding="{Binding}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
         </StackPanel>
     </Grid>
 </Window>

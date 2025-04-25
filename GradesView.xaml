@@ -15,8 +15,12 @@
     <Grid Margin="10">
         <StackPanel>
             <TextBlock Text="Успеваемость студентов" FontSize="20" Margin="0,0,0,20" HorizontalAlignment="Center"/>
-
-            <DataGrid x:Name="GradesDataGrid" AutoGenerateColumns="True" Height="300"/>
-        </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                <Button Content="Добавить" Width="100" Margin="5" Background="#FFFDB8B4" Click="AddGrade_Click"/>
+                <Button Content="Редактировать" Width="100" Margin="5" Background="#FFFDB8B4" Click="EditGrade_Click"/>
+                <Button Content="Удалить" Width="100" Margin="5" Background="#FFFDB8B4" Click="DeleteGrade_Click"/>
+            </StackPanel>
+            <DataGrid x:Name="GradesDataGrid" AutoGenerateColumns="True" Height="250"/>
+        </StackPanel> 
     </Grid>
 </Window>

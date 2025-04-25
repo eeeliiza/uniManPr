@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddEditCourseWindow.xaml.cs">
+      <DependentUpon>AddEditCourseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditGradeWindow.xaml.cs">
+      <DependentUpon>AddEditGradeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AddEditStudentWindow.xaml.cs">
       <DependentUpon>AddEditStudentWindow.xaml</DependentUpon>
     </Compile>
@@ -67,6 +73,14 @@
     <Compile Include="Students.xaml.cs">
       <DependentUpon>Students.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddEditCourseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddEditGradeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AddEditStudentWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
